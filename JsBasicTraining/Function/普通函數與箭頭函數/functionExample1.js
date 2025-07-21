@@ -3,13 +3,13 @@
 console.log('===函數宣告 (Function Declaration)===');
 
 // 可在宣告前呼叫
-console.log('宣告前呼叫:', NumPlus(12, 30)); // 360
+console.log('宣告前呼叫:', numPlus(12, 30)); // 360
 
-function NumPlus(a, b) {
+function numPlus(a, b) {
     return a * b;
 }
 
-console.log('宣告後呼叫:', NumPlus(5, 7)); // 35
+console.log('宣告後呼叫:', numPlus(5, 7)); // 35
 
 
 
@@ -47,6 +47,6 @@ const calculate = (operation, a, b) => {
     return operation(a, b);
 };
 
-console.log('使用函數宣告:', calculate(NumPlus, 3, 4)); // 12
+console.log('使用函數宣告:', calculate(numPlus, 3, 4)); // 12
 console.log('使用函數表達式:', calculate(division, 20, 4)); // 5
 console.log('使用箭頭函式:', calculate(plus, 15, 25)); // 40
